@@ -1,0 +1,192 @@
+/* 入力フォームのスタイル */
+
+/* =============================
+   Layout & Container
+   ============================= */
+.form {
+  max-width: 420px;
+  margin: 45px auto 0;
+}
+
+.form-page {
+  min-height: 100dvh;
+}
+
+.form-page__center {
+  min-height: 100dvh;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =============================
+   Title & Section
+   ============================= */
+.form__title {
+  color: var(--color-black);
+  font-size: 35px;
+  line-height: 1.5;
+  margin: 20px 20px 20px 0;
+  font-weight: 600;
+}
+
+.form__content {
+  display: block;
+}
+
+.form__section {
+  margin: 50px 0;
+}
+
+.form__section-title {
+  font-size: 33px;
+  font-weight: 600;
+  padding: 5px 0 18px 0;
+}
+
+/* =============================
+   Field & Label
+   ============================= */
+.form__field {
+  display: block;
+  margin-bottom: 18px;
+}
+
+.form__label {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 9px;
+  font-size: 14px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.form__required {
+  color: var(--color-red);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.form__error {
+  color: var(--color-red);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* =============================
+   Input (text, number, etc.)
+   ============================= */
+.form__input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid var(--color-dark-gray);
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  font-weight: 500;
+  background: var(--color-white) !important;
+}
+
+.form__input:focus {
+  border: 2px solid var(--color-yellow);
+}
+
+.form__input--error {
+  border: 2px solid var(--color-red);
+}
+
+.form__input--error:focus {
+  border: 2px solid var(--color-red);
+}
+
+.form__input--age {
+  max-width: 80px;
+}
+
+/* =============================
+   Radio Button
+   ============================= */
+.form__radio {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.form__radio-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-black);
+  border-radius: 50%;
+  background: var(--color-white);
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.form__radio-input:checked {
+  background-color: var(--color-white);
+  border-color: var(--color-blue);
+}
+
+.form__radio-input:checked::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  background: var(--color-blue);
+  border-radius: 50%;
+}
+
+.form__radio-text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* =============================
+   Buttons
+   ============================= */
+.form__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.form__button {
+  width: 100%;
+  padding: 17px 0;
+  border-radius: 10px;
+  border: 1px solid var(--color-gray);
+  background: var(--color-pale-gray);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form__button--next {
+  color: var(--color-white);
+  background: var(--color-blue);
+  border: none;
+}
+
+.form__button--back {
+  background: var(--color-white);
+  color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+}
+
+.form__button--disabled {
+  color: var(--color-pale-gray);
+  background: var(--color-gray);
+  border: none;
+}
