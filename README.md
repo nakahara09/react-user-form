@@ -1,4 +1,4 @@
-# React Assignment - User Form (中原 錦陽)
+# User Form
 
 ## 概要
 氏名（漢字/カタカナ）、年齢、性別を入力するユーザー情報フォームです。  
