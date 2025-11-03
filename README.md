@@ -19,12 +19,19 @@
 
 ## ディレクトリ構成
 src/
+
 └── components/
+
 └── UserForm/
+
 ├── UserForm.tsx # 入力フォーム本体
+
 ├── UserForm.css # フォーム用スタイル
+
 ├── types.ts # 型定義
+
 ├── utils.ts # ユーティリティ関数
+
 └── validators.ts # バリデーション関数
 
 ## 開発環境
